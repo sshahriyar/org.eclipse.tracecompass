@@ -11,11 +11,9 @@
 package org.eclipse.tracecompass.totalads.core;
 
 import java.io.File;
-import java.util.logging.FileHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import org.eclipse.tracecompass.totalads.core.Activator;
 import org.eclipse.tracecompass.totalads.dbms.DBMSFactory;
 import org.eclipse.tracecompass.totalads.algorithms.AlgorithmFactory;
@@ -80,7 +78,8 @@ public class Activator implements BundleActivator {
 
             // Initialize the logger
             Handler handler = null;
-            handler = new FileHandler(getCurrentPath() + "totaladslog.xml"); //$NON-NLS-1$
+            //handler = new java.util.logging.SocketHandler("localhost", 5000); //$NON-NLS-1$
+            handler = new java.util.logging.FileHandler(getCurrentPath() + "totaladslog.xml"); //$NON-NLS-1$
             Logger.getLogger("").addHandler(handler); //$NON-NLS-1$
 
         } catch (Exception ex) { // capture all the exceptions here
