@@ -20,7 +20,11 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.tracecompass.ctf.core
 Export-Package: org.eclipse.tracecompass.internal.lttng2.control.ui;x-friends:="org.eclipse.tracecompass.lttng2.control.ui.tests",
  org.eclipse.tracecompass.internal.lttng2.control.ui.relayd;x-internal:=true,
- org.eclipse.tracecompass.internal.lttng2.control.ui.views;x-friends:="org.eclipse.tracecompass.lttng2.kernel.ui,org.eclipse.tracecompass.lttng2.control.ui.tests,org.eclipse.tracecompass.lttng2.kernel.ui.swtbot.tests",
+ org.eclipse.tracecompass.internal.lttng2.control.ui.views;
+  x-friends:="org.eclipse.tracecompass.lttng2.kernel.ui,
+   org.eclipse.tracecompass.lttng2.control.ui.tests,
+   org.eclipse.tracecompass.lttng2.kernel.ui.swtbot.tests,
+   org.eclipse.tracecompass.totalads.ui",
  org.eclipse.tracecompass.internal.lttng2.control.ui.views.dialogs;x-friends:="org.eclipse.tracecompass.lttng2.control.ui.tests",
  org.eclipse.tracecompass.internal.lttng2.control.ui.views.handlers;x-internal:=true,
  org.eclipse.tracecompass.internal.lttng2.control.ui.views.logging;x-friends:="org.eclipse.tracecompass.lttng2.control.ui.tests",
