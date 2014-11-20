@@ -39,14 +39,12 @@ http://www.eclipse.org/legal/epl-v10.html
 
    <windowImages i16="/org.eclipse.tracecompass.rcp.branding/icons/alt_window_16.gif" i32="/org.eclipse.tracecompass.rcp.branding/icons/alt_window_32.gif"/>
 
-
    <launcher name="tracecompass">
       <solaris/>
       <win useIco="false">
          <bmp/>
       </win>
    </launcher>
-
 
    <vm>
       <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</linux>
