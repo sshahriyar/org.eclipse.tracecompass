@@ -1,23 +1,23 @@
-Insturctions to setup TotalADS and Tracecompass
+Instructions to setup TotalADS and Tracecompass
 
 1.First clone the source code:
 
         git clone https://github.com/sshahriyar/org.eclipse.tracecompass
         cd org.eclipse.tracecompass
 
-        If you want to contribute to TotalADS, first fork the org.eclipse.tracecompass repository it into your account and clone it from there (just as shown above) instead of this repo.
+        If you want to contribute to TotalADS, first fork the org.eclipse.tracecompass repository it into your account and clone it from there (just as shown above) instead of this repository.
 
 2. Checkout development, "develop", branch:
 
          git checkout develop
 
-         There are two more branches master and staging. If you just want to compile and run, then use the master branch but to add new features you *must* only use the develop branch
+         There are two more branches master and staging. If you just want to compile and run, then use the master branch but to add new features you *must* only use the develop branch.
 
 3. Install Eclipse from www.eclipse.org/downloads. You can start with any Eclipse pre-package, but I would suggest you download the Eclipse package named "Eclipse for RCP and RAP Developers". This package already contains the necessary plugins for Eclipse required by Tracecompass to compile. You can also download any other Eclipse distribution and install the necessary plugins as mentioned in step 4.
 
-4.While following the instructions below in Step 4, you may have to install new Eclipse plugins/dependencies if you have not already downloaded "Eclipse for RCP and RAP Developers" package.You can install new dependencies in Eclipse either through "Help->Eclipse Marketplace" or "Help -> Install New Software". One of the options should work for installation of dependencies.Following instructions from 4.1 to 4. are take from http://wiki.eclipse.org/Trace_Compass/Development_Environment_Setup
+4.While following the instructions below in Step 4, you may have to install new Eclipse plugins/dependencies if you have not already downloaded "Eclipse for RCP and RAP Developers" package.You can install new dependencies in Eclipse either through "Help->Eclipse Marketplace" or "Help -> Install New Software". One of the options should work for installation of dependencies. Following instructions from 4.1 to 4.4 are taken from http://wiki.eclipse.org/Trace_Compass/Development_Environment_Setup.
 
-	4.1 Import the Trace Compass projects into the workspace
+	4.1 Import the Trace Compass projects into the workspace.
 
     Select "File -> Import..."
 
@@ -25,7 +25,7 @@ Insturctions to setup TotalADS and Tracecompass
 
     Next to "Select root directory" click "Browse..."
 
-    Navigate to the directory where you git clone'd the project earlier. It should now list the available plugins.
+    Navigate to the directory where you git cloned the project earlier. It should now list the available plugins.
 
     Make sure they are all checked and click  "Finish".
 
@@ -33,7 +33,7 @@ Insturctions to setup TotalADS and Tracecompass
 
      You will probably get a bunch of build errors at this point. DON'T PANIC! This is because Trace Compass needs additional dependencies that might not be present in your current Eclipse installation. We will install those in the following section.
 
-    4.2 Set the Target Platform
+    4.2 Set the Target Platform.
 
      Eclipse offers the ability to set target platforms, which will download a specific environment to run your plugins, without having to "pollute" your Eclipse install. Trace Compass ships target definition files, which is the recommended way of installing its dependencies.
 
@@ -69,18 +69,17 @@ Insturctions to setup TotalADS and Tracecompass
 
     In the top menu, click "Project -> Build Project"
 
-    After it is built, the warning should disappear, and the HTML files should be present in its doc/ subdirectory.
+    After it is built, the warning should disappear, and the HTML files should be present in its doc/ sub-directory.
 
     Note that this builder does not run automatically ; Ant is not very smart at figuring out which files were changed, so it would end up constantly rebuilding the doc plugins for nothing. For this reason, if you modify the source (.mediawiki) files, you will have to rebuild the HTML manually, using the same method.
 
-     4.5 Run (or Debug) the plugins
 
 
 4.  If you have not already installed it, install JDK 7 or higher for your operating system.
 
 5. If JDK 7+ is not already in path of Eclipse, you may encounter errors. If not skip this step, else to add JDK 7+ to the path of Eclipse do the following:
 
-	5.1. Go to Windows->Preference->Java->Installed JRES. Add JDK 7+ as an additional installed JRE
+	5.1. Go to Windows->Preference->Java->Installed JRES. Add JDK 7+ as an additional installed JRE.
 
     5.2. If you don't know where JDK 7+, then search in your "programs files" in Windows or look at the following path for Linux	  "/usr/lib/jvm/"
 
@@ -99,7 +98,7 @@ Insturctions to setup TotalADS and Tracecompass
 6.  Install MongoDB
 
 	Follow the instructions here on how to install MongoDB based on your OS: http://docs.mongodb.org/manual/installation/
-	Simple installation instructions for a Linux system are as follows, they are alos present on the above link:
+	Simple installation instructions for a Linux system are as follows, they are also present on the above link:
 
 	       curl -O http://downloads.mongodb.org/linux/mongodb-linux-x86_64-2.4.9.tgz
 
@@ -113,13 +112,13 @@ Insturctions to setup TotalADS and Tracecompass
 
 	       And append the following ":your_path"/mongodb/bin" to PATH.
 
-	       Replace your_path with the actual path in the system and restart terminal
+	       Replace your path with the actual path in the system and restart terminal
 
 8. Start MongoDB. If you installed it directly on your OS from the URL in 6, then it may have already been started or will start on a reboot automatically. An alternate way to start mongodb is as follows:
  	 cd mongodb
 	 mongod --dbpath data/db/
 
-9. Now right click on org.eclipse.tracecompass.totalads.core and run as Eclipse application. Once the new Eclipse instance is launched click on Windows->Perspective menu to pen a new perspective TotalADS. The next time you can just select "Eclipse Application" from the Run (or Debug) icon in the toolbar.
+9. Now right click on org.eclipse.tracecompass.totalads.core and run as Eclipse application. Once the new Eclipse instance is launched click on Windows->Perspective menu to open a new perspective TotalADS. The next time you can just select "Eclipse Application" from the Run (or Debug) icon in the toolbar.
 
 
 10. You are all done setting up Tracecompass and TotalADS. User guide and a developer's guide for TotalADS are available at the following URL:
