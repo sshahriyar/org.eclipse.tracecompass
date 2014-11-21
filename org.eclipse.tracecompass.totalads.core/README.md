@@ -1,3 +1,23 @@
+TotalADS is a framework to automatically diagnose anomalies from software systems in operations.
+It has the following features:
+
+	Framework to facilitate anomaly detection in software systems
+
+	Integrates machine learning anomaly detection algorithms
+
+	Supports execution traces and logs in CTF, XML and text format
+
+	Supports live anomaly detection using trace streaming
+
+	Supports live training and testing
+
+	Supports variety of trace inspection views for forensic analysis, such as control flow of processes,resource usages...
+
+	Provides extendible interfaces in Java to add new algorithms, trace formats, and views
+
+	Available as an Eclipse Plugin
+
+
 Instructions to setup TotalADS and Tracecompass
 
 1.First clone the source code:
