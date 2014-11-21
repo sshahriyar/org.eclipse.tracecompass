@@ -1,5 +1,4 @@
-Instructions for Development and Testing
-
+Insturctions to setup TotalADS and Tracecompass
 
 1.First clone the source code:
   git clone https://github.com/sshahriyar/org.eclipse.tracecompass
