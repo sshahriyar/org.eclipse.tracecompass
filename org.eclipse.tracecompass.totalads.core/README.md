@@ -1,13 +1,17 @@
 Insturctions to setup TotalADS and Tracecompass
 
 1.First clone the source code:
-  git clone https://github.com/sshahriyar/org.eclipse.tracecompass
-  cd org.eclipse.tracecompass
-  If you want to contribute to TotalADS, first fork the org.eclipse.tracecompass repository it into your account and clone it from there (just as shown above) instead of this repo.
 
-2. Checkout development, "develop", branch
-   git checkout develop
-   There are two more branches master and staging. If you just want to compile and run, then use the master branch but to add new features you *must* only use the develop branch
+        git clone https://github.com/sshahriyar/org.eclipse.tracecompass
+        cd org.eclipse.tracecompass
+
+        If you want to contribute to TotalADS, first fork the org.eclipse.tracecompass repository it into your account and clone it from there (just as shown above) instead of this repo.
+
+2. Checkout development, "develop", branch:
+
+         git checkout develop
+
+         There are two more branches master and staging. If you just want to compile and run, then use the master branch but to add new features you *must* only use the develop branch
 
 3. Install Eclipse from www.eclipse.org/downloads. You can start with any Eclipse pre-package, but I would suggest you download the Eclipse package named "Eclipse for RCP and RAP Developers". This package already contains the necessary plugins for Eclipse required by Tracecompass to compile. You can also download any other Eclipse distribution and install the necessary plugins as mentioned in step 4.
 
