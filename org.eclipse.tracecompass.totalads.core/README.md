@@ -87,15 +87,15 @@ Instructions to setup TotalADS and Tracecompass
 
 	6.3. Now right click on org.eclipse.tracecompass.totalads and select project properties
 
-         Select Java Build Bath
+    Select Java Build Bath
 
-         Select Libraries
+    Select Libraries
 
-         Select JRE System Library; (the one with the error status)
+    Select JRE System Library; (the one with the error status)
 
-         If there is no error status just select the JRE System Library
+    If there is no error status just select the JRE System Library
 
-         Click Edit and see if JRE is jdk 7+ or openjdk 7+; otherwise, click on Alternate JRE and select it.
+    Click Edit and see if JRE is jdk 7+ or openjdk 7+; otherwise, click on Alternate JRE and select it.
 
 7.  Install MongoDB
 
