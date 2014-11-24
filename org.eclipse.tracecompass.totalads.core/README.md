@@ -9,7 +9,7 @@ Instructions to setup TotalADS and Tracecompass
         git clone https://github.com/sshahriyar/org.eclipse.tracecompass
         cd org.eclipse.tracecompass
 
-        If you want to contribute to TotalADS, first fork the org.eclipse.tracecompass repository it into your account and clone it from there (just as shown above) instead of this repository.
+  If you want to contribute to TotalADS, first fork the org.eclipse.tracecompass repository it into your account and clone it from there (just as shown above) instead of this repository.
 
 2. Checkout development, "develop", branch:
 
