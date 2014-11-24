@@ -10,12 +10,11 @@ Instructions to setup TotalADS and Tracecompass
         cd org.eclipse.tracecompass
 
   If you want to contribute to TotalADS, first fork the org.eclipse.tracecompass repository it into your account and clone it from there (just as shown above) instead of this repository.
-
-2. Checkout development, "develop", branch:
+2. Checkout the development, "develop", branch:
 
          git checkout develop
 
-         There are two more branches master and staging. If you just want to compile and run, then use the master branch but to add new features you *must* only use the develop branch.
+   There are two more branches master and staging. If you just want to compile and run, then use the master branch but to add new features you *must* only use the develop branch.
 
 3. Install Eclipse from www.eclipse.org/downloads. You can start with any Eclipse pre-package, but I would suggest you download the Eclipse package named "Eclipse for RCP and RAP Developers". This package already contains the necessary plugins for Eclipse required by Tracecompass to compile. You can also download any other Eclipse distribution and install the necessary plugins as mentioned in step 4.
 
@@ -77,17 +76,15 @@ Instructions to setup TotalADS and Tracecompass
 
     Note that this builder does not run automatically ; Ant is not very smart at figuring out which files were changed, so it would end up constantly rebuilding the doc plugins for nothing. For this reason, if you modify the source (.mediawiki) files, you will have to rebuild the HTML manually, using the same method.
 
+5.  If you have not already installed it, install JDK 7 or higher for your operating system.
 
+6. If JDK 7+ is not already in path of Eclipse, you may encounter errors. If not skip this step, else to add JDK 7+ to the path of Eclipse do the following:
 
-4.  If you have not already installed it, install JDK 7 or higher for your operating system.
+	6.1. Go to Windows->Preference->Java->Installed JRES. Add JDK 7+ as an additional installed JRE.
 
-5. If JDK 7+ is not already in path of Eclipse, you may encounter errors. If not skip this step, else to add JDK 7+ to the path of Eclipse do the following:
+    6.2. If you don't know where JDK 7+, then search in your "programs files" in Windows or look at the following path for Linux	  "/usr/lib/jvm/"
 
-	5.1. Go to Windows->Preference->Java->Installed JRES. Add JDK 7+ as an additional installed JRE.
-
-    5.2. If you don't know where JDK 7+, then search in your "programs files" in Windows or look at the following path for Linux	  "/usr/lib/jvm/"
-
-	5.3. Now right click on org.eclipse.tracecompass.totalads and select project properties
+	6.3. Now right click on org.eclipse.tracecompass.totalads and select project properties
 
          Select Java Build Bath
 
@@ -99,7 +96,7 @@ Instructions to setup TotalADS and Tracecompass
 
          Click Edit and see if JRE is jdk 7+ or openjdk 7+; otherwise, click on Alternate JRE and select it.
 
-6.  Install MongoDB
+7.  Install MongoDB
 
 	Follow the instructions here on how to install MongoDB based on your OS: http://docs.mongodb.org/manual/installation/
 	Simple installation instructions for a Linux system are as follows, they are also present on the above link:
@@ -118,7 +115,7 @@ Instructions to setup TotalADS and Tracecompass
 
 	       Replace your path with the actual path in the system and restart terminal
 
-8. Start MongoDB. If you installed it directly on your OS from the URL in 6, then it may have already been started or will start on a reboot automatically. An alternate way to start mongodb is as follows:
+8. Start MongoDB. If you installed it directly on your OS from the URL in step 7, then it may have already been started or will start on a reboot automatically. An alternate way to start mongodb is as follows:
  	 cd mongodb
 	 mongod --dbpath data/db/
 
