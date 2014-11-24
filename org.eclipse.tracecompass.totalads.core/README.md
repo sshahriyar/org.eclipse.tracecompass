@@ -4,12 +4,13 @@ It	integrates different anomaly detection algorithms. It supports execution trac
 
 Instructions to setup TotalADS and Tracecompass
 
-1.First clone the source code:
+1. First clone the source code:
 
         git clone https://github.com/sshahriyar/org.eclipse.tracecompass
         cd org.eclipse.tracecompass
 
   If you want to contribute to TotalADS, first fork the org.eclipse.tracecompass repository it into your account and clone it from there (just as shown above) instead of this repository.
+
 2. Checkout the development, "develop", branch:
 
          git checkout develop
@@ -18,7 +19,7 @@ Instructions to setup TotalADS and Tracecompass
 
 3. Install Eclipse from www.eclipse.org/downloads. You can start with any Eclipse pre-package, but I would suggest you download the Eclipse package named "Eclipse for RCP and RAP Developers". This package already contains the necessary plugins for Eclipse required by Tracecompass to compile. You can also download any other Eclipse distribution and install the necessary plugins as mentioned in step 4.
 
-4.While following the instructions below in Step 4, you may have to install new Eclipse plugins/dependencies if you have not already downloaded "Eclipse for RCP and RAP Developers" package.You can install new dependencies in Eclipse either through "Help->Eclipse Marketplace" or "Help -> Install New Software". One of the options should work for installation of dependencies. Following instructions from 4.1 to 4.4 are taken from http://wiki.eclipse.org/Trace_Compass/Development_Environment_Setup.
+4. While following the instructions below in Step 4, you may have to install new Eclipse plugins/dependencies if you have not already downloaded "Eclipse for RCP and RAP Developers" package.You can install new dependencies in Eclipse either through "Help->Eclipse Marketplace" or "Help -> Install New Software". One of the options should work for installation of dependencies. Following instructions from 4.1 to 4.4 are taken from http://wiki.eclipse.org/Trace_Compass/Development_Environment_Setup.
 
 	4.1 Import the Trace Compass projects into the workspace.
 
@@ -76,7 +77,7 @@ Instructions to setup TotalADS and Tracecompass
 
     Note that this builder does not run automatically ; Ant is not very smart at figuring out which files were changed, so it would end up constantly rebuilding the doc plugins for nothing. For this reason, if you modify the source (.mediawiki) files, you will have to rebuild the HTML manually, using the same method.
 
-5.  If you have not already installed it, install JDK 7 or higher for your operating system.
+5. If you have not already installed it, install JDK 7 or higher for your operating system.
 
 6. If JDK 7+ is not already in path of Eclipse, you may encounter errors. If not skip this step, else to add JDK 7+ to the path of Eclipse do the following:
 
