@@ -1,21 +1,5 @@
 TotalADS is a framework to automatically diagnose anomalies from software systems in operations.
-It has the following features:
-
-	Framework to facilitate anomaly detection in software systems
-
-	Integrates machine learning anomaly detection algorithms
-
-	Supports execution traces and logs in CTF, XML and text format
-
-	Supports live anomaly detection using trace streaming
-
-	Supports live training and testing
-
-	Supports variety of trace inspection views for forensic analysis, such as control flow of processes,resource usages...
-
-	Provides extendible interfaces in Java to add new algorithms, trace formats, and views
-
-	Available as an Eclipse Plugin
+It	integrates different anomaly detection algorithms. It supports execution traces and logs in CTF, XML and text format. It supports live anomaly detection using trace streaming along with real time training and testing. It also supports variety of trace inspection views for forensic analysis, such as control flow of processes,resource usages and etc. It is developed in Java and provides extendible interfaces in Java to add new algorithms, trace formats, and views. Most importantly, it is available as an Eclipse Plugin.
 
 
 Instructions to setup TotalADS and Tracecompass
@@ -141,7 +125,7 @@ Instructions to setup TotalADS and Tracecompass
 9. Now right click on org.eclipse.tracecompass.totalads.core and run as Eclipse application. Once the new Eclipse instance is launched click on Windows->Perspective menu to open a new perspective TotalADS. The next time you can just select "Eclipse Application" from the Run (or Debug) icon in the toolbar.
 
 
-10. You are all done setting up Tracecompass and TotalADS. User guide and a developer's guide for TotalADS are available at the following URL:
+10. You are all done setting up Tracecompass and TotalADS. User guide and a developer's guide for TotalADS are available at the following URLs:
 
         https://github.com/sshahriyar/org.eclipse.tracecompass/wiki/User-Guide
         https://github.com/sshahriyar/org.eclipse.tracecompass/wiki/Developer-Guide
