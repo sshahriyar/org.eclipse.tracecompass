@@ -14,12 +14,12 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.eclipse.tracecompass.totalads.exceptions.TotalADSGeneralException;
-import org.eclipse.tracecompass.totalads.reader.tmfreaders.CustomTmfReaderInitializer;
 import org.eclipse.tracecompass.totalads.readers.ITraceTypeReader;
 import org.eclipse.tracecompass.totalads.readers.Messages;
 import org.eclipse.tracecompass.totalads.readers.TraceTypeFactory;
 import org.eclipse.tracecompass.totalads.readers.ctfreaders.CTFLTTngSysCallTraceReader;
 import org.eclipse.tracecompass.totalads.readers.textreaders.TextLineTraceReader;
+import org.eclipse.tracecompass.totalads.readers.tmfreaders.CustomTmfReaderInitializer;
 
 /**
  * This class registers all the trace readers with itself by following a factory

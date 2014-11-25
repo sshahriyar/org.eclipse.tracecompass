@@ -8,7 +8,7 @@
  * Contributors:
  *    Syed Shariyar Murtaza -- Initial design and implementation
  **********************************************************************************************/
-package org.eclipse.tracecompass.totalads.algorithms.slidingwindow;
+package org.eclipse.tracecompass.totalads.algorithms.sequencematching;
 
 import java.lang.reflect.Type;
 import java.util.Map;
@@ -17,7 +17,7 @@ import org.eclipse.tracecompass.totalads.dbms.IDBCursor;
 import org.eclipse.tracecompass.totalads.dbms.IDBRecord;
 import org.eclipse.tracecompass.totalads.dbms.IDataAccessObject;
 import org.eclipse.tracecompass.totalads.exceptions.TotalADSDBMSException;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.NameToIDCollection;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.NameToIDCollection;
 
 import com.google.common.collect.HashBiMap;
 import com.google.gson.Gson;

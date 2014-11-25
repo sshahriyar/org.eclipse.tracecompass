@@ -37,7 +37,7 @@ import de.flapdoodle.embed.mongo.distribution.Version;
 import de.flapdoodle.embed.process.runtime.Network;
 
 /**
- * Tests for the class SlidingWindow in org.eclipse.tracecompass.totalads.core
+ * Tests for the class SequenceMatching in org.eclipse.tracecompass.totalads.core
  * plugin
  *
  * @author <p>

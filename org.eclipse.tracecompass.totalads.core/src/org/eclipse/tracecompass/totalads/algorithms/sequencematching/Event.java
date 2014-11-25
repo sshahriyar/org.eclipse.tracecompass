@@ -8,11 +8,11 @@
  * Contributors:
  *    Syed Shariyar Murtaza -- Initial design and implementation
  **********************************************************************************************/
-package org.eclipse.tracecompass.totalads.algorithms.slidingwindow;
+package org.eclipse.tracecompass.totalads.algorithms.sequencematching;
 
 import java.util.ArrayList;
 
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.Event;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.Event;
 
 /**
  * This class represents an event of a trace in a tree and the corresponding

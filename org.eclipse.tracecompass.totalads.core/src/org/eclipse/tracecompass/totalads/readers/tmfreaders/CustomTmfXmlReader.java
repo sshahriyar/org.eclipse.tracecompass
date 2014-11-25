@@ -8,38 +8,38 @@
  * Contributors:
  *    Syed Shariyar Murtaza -- Initial design and implementation
  **********************************************************************************************/
-package org.eclipse.tracecompass.totalads.reader.tmfreaders;
+package org.eclipse.tracecompass.totalads.readers.tmfreaders;
 
 import java.io.File;
 
 import org.eclipse.tracecompass.tmf.core.exceptions.TmfTraceException;
-import org.eclipse.tracecompass.tmf.core.parsers.custom.CustomTxtTraceDefinition;
+import org.eclipse.tracecompass.tmf.core.parsers.custom.CustomXmlTraceDefinition;
 import org.eclipse.tracecompass.totalads.exceptions.TotalADSGeneralException;
 import org.eclipse.tracecompass.totalads.exceptions.TotalADSReaderException;
-import org.eclipse.tracecompass.totalads.reader.tmfreaders.CustomTmfTextIterator;
-import org.eclipse.tracecompass.totalads.reader.tmfreaders.CustomTmfTextReader;
 import org.eclipse.tracecompass.totalads.readers.ITraceIterator;
 import org.eclipse.tracecompass.totalads.readers.ITraceTypeReader;
 import org.eclipse.tracecompass.totalads.readers.TraceTypeFactory;
+import org.eclipse.tracecompass.totalads.readers.tmfreaders.CustomTmfXmlIterator;
+import org.eclipse.tracecompass.totalads.readers.tmfreaders.CustomTmfXmlReader;
 
 /**
- * This class implements the trace reader for the custom TMF text parser.
+ * This class provides a trace reader based on the Custom TMF-XML parser
  *
  * @author <p>
  *         Syed Shariyar Murtaza justsshary@hotmail.com
  *         </p>
  *
  */
-public class CustomTmfTextReader implements ITraceTypeReader {
+public class CustomTmfXmlReader implements ITraceTypeReader {
     private String fReaderName;
-    private CustomTxtTraceDefinition fCustReader;
+    private CustomXmlTraceDefinition fCustReader;
 
     /**
      * @param custReader
-     *            Context of the reader
+     *            Trace definition
      */
-    public CustomTmfTextReader(CustomTxtTraceDefinition custReader) {
-        fReaderName = "CustTxt-" + custReader.definitionName; //$NON-NLS-1$
+    public CustomTmfXmlReader(CustomXmlTraceDefinition custReader) {
+        fReaderName = "CustXML-" + custReader.definitionName; //$NON-NLS-1$
         fCustReader = custReader;
     }
 
@@ -52,15 +52,15 @@ public class CustomTmfTextReader implements ITraceTypeReader {
     /**
      * Registers itself with the TraceTypeFactory
      *
-     * @param customTextReader
-     *            Custom text reader
+     * @param customXmlReader
+     *            Custom XML reader
      *
      * @throws TotalADSGeneralException
      *             Exception for invalid reader
      */
-    public static void registerTraceTypeReader(CustomTmfTextReader customTextReader) throws TotalADSGeneralException {
+    public static void registerTraceTypeReader(CustomTmfXmlReader customXmlReader) throws TotalADSGeneralException {
         TraceTypeFactory trcTypFactory = TraceTypeFactory.getInstance();
-        trcTypFactory.registerTraceReaderWithFactory(customTextReader.getName(), customTextReader);
+        trcTypFactory.registerTraceReaderWithFactory(customXmlReader.getName(), customXmlReader);
     }
 
     @Override
@@ -74,13 +74,13 @@ public class CustomTmfTextReader implements ITraceTypeReader {
         if (fReaderName.length() > 3) {
             endIdx = 3;
         }
-        return "CT" + fReaderName.substring(0, endIdx); //$NON-NLS-1$
+        return "CX" + fReaderName.substring(0, endIdx); //$NON-NLS-1$
     }
 
     @Override
     public ITraceIterator getTraceIterator(File file) throws TotalADSReaderException {
         try {
-            return new CustomTmfTextIterator(fCustReader, file.getPath());
+            return new CustomTmfXmlIterator(fCustReader, file.getPath());
         } catch (TmfTraceException e) {
 
             throw new TotalADSReaderException(e.getMessage() + "\n File: " + file.getName()); //$NON-NLS-1$

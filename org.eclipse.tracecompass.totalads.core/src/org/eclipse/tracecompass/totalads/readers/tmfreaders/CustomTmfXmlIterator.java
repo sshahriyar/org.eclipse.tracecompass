@@ -8,7 +8,7 @@
  * Contributors:
  *    Syed Shariyar Murtaza -- Initial design and implementation
  **********************************************************************************************/
-package org.eclipse.tracecompass.totalads.reader.tmfreaders;
+package org.eclipse.tracecompass.totalads.readers.tmfreaders;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -20,8 +20,8 @@ import org.eclipse.tracecompass.tmf.core.parsers.custom.CustomXmlTrace;
 import org.eclipse.tracecompass.tmf.core.parsers.custom.CustomXmlTraceDefinition;
 import org.eclipse.tracecompass.tmf.core.trace.ITmfContext;
 import org.eclipse.tracecompass.totalads.exceptions.TotalADSReaderException;
-import org.eclipse.tracecompass.totalads.reader.tmfreaders.Messages;
 import org.eclipse.tracecompass.totalads.readers.ITraceIterator;
+import org.eclipse.tracecompass.totalads.readers.tmfreaders.Messages;
 
 /**
  * This class provides an iterator for a trace based on the custom TMF-XML

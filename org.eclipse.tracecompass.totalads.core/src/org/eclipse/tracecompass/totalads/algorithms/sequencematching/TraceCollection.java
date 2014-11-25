@@ -8,40 +8,39 @@
  * Contributors:
  *    Syed Shariyar Murtaza -- Initial design and implementation
  **********************************************************************************************/
-package org.eclipse.tracecompass.totalads.algorithms.slidingwindow;
+package org.eclipse.tracecompass.totalads.algorithms.sequencematching;
 
 /**
- * This class represents the fields of the name to id collection in a NoSQL database. It
- * stores the name of the event with its corresponding integer numbers.
+ * This class represents the fields of a trace collection in a NoSQL database.
  *
  * @author <p>
  *         Syed Shariyar Murtaza justsshary@hotmail.com
  *         </p>
  *
  */
-enum NameToIDCollection {
+enum TraceCollection {
 
     /**
      * The name of collection itself
      */
-    COLLECTION_NAME("name_to_id"), //$NON-NLS-1$
+    COLLECTION_NAME("trace_data"), //$NON-NLS-1$
     /**
-     * Key field name
+     * name
      */
     KEY("_id"), //$NON-NLS-1$
     /**
-     * Mapper name, this field would contain a map of name to ids.
+     * Tree field
      */
-    MAP("map"); //$NON-NLS-1$
+    TREE("tree"); //$NON-NLS-1$
 
     private String fieldName;
 
     /**
      * Constructor
      *
-     * @param fieldName field's name
+     * @param fieldName
      */
-    private NameToIDCollection(String fieldName) {
+    private TraceCollection(String fieldName) {
         this.fieldName = fieldName;
     }
 

@@ -8,14 +8,14 @@
  * Contributors:
  *    Syed Shariyar Murtaza -- Initial design and implementation
  **********************************************************************************************/
-package org.eclipse.tracecompass.totalads.reader.tmfreaders;
+package org.eclipse.tracecompass.totalads.readers.tmfreaders;
 
 import org.eclipse.tracecompass.tmf.core.parsers.custom.CustomTxtTraceDefinition;
 import org.eclipse.tracecompass.tmf.core.parsers.custom.CustomXmlTraceDefinition;
 import org.eclipse.tracecompass.totalads.exceptions.TotalADSGeneralException;
-import org.eclipse.tracecompass.totalads.reader.tmfreaders.CustomTmfTextReader;
-import org.eclipse.tracecompass.totalads.reader.tmfreaders.CustomTmfXmlReader;
 import org.eclipse.tracecompass.totalads.readers.TraceTypeFactory;
+import org.eclipse.tracecompass.totalads.readers.tmfreaders.CustomTmfTextReader;
+import org.eclipse.tracecompass.totalads.readers.tmfreaders.CustomTmfXmlReader;
 
 /**
  * This class loads all the custom text and XML readers created by users into

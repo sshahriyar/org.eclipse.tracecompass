@@ -52,7 +52,7 @@
              class="org.eclipse.tracecompass.totalads.ui.live.LiveMonitorView"
              icon="icons/livemonitor.ico"
              id="org.eclipse.tracecompass.totalads.ui.LiveMonitorView"
-             name="LiveMonitor"
+             name="Live Monitor"
              restorable="true">
        </view>
        <view

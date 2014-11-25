@@ -9,10 +9,10 @@
  *    Syed Shariyar Murtaza -- Initial design and implementation
  **********************************************************************************************/
 
-package org.eclipse.tracecompass.totalads.algorithms.slidingwindow;
+package org.eclipse.tracecompass.totalads.algorithms.sequencematching;
 
 import org.eclipse.osgi.util.NLS;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.Messages;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.Messages;
 /**
  * Message Bundle
  *
@@ -23,7 +23,7 @@ import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.Messages;
  */
 @SuppressWarnings("javadoc")
 public class Messages extends NLS {
-    private static final String BUNDLE_NAME = "org.eclipse.tracecompass.totalads.algorithms.slidingwindow.messages"; //$NON-NLS-1$
+    private static final String BUNDLE_NAME = "org.eclipse.tracecompass.totalads.algorithms.sequencematching.messages"; //$NON-NLS-1$
     public static String SlidingWindow_DBUpdated;
     public static String SlidingWindow_Description;
     public static String SlidingWindow_DistinctSeq;

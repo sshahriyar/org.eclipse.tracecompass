@@ -21,7 +21,7 @@ import org.eclipse.tracecompass.totalads.algorithms.Messages;
 import org.eclipse.tracecompass.totalads.exceptions.TotalADSGeneralException;
 import org.eclipse.tracecompass.totalads.algorithms.hiddenmarkovmodel.HiddenMarkovModel;
 import org.eclipse.tracecompass.totalads.algorithms.ksm.KernelStateModeling;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.SlidingWindow;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.SequenceMatching;
 
 /**
  * This is an AlgorithmFactory class based on a factory pattern. It registers
@@ -190,7 +190,7 @@ public class AlgorithmFactory {
         // (org.eclipse.tracecompass.totalads.ui.IDetectionAlgorithms.class);
 
         KernelStateModeling.registerAlgorithm();
-        SlidingWindow.registerModel();
+        SequenceMatching.registerAlgorithm();
         HiddenMarkovModel.registerAlgorithm();
 
     }

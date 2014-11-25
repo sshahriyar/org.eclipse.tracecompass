@@ -8,7 +8,7 @@
  * Contributors:
  *    Syed Shariyar Murtaza -- Initial design and implementation
  **********************************************************************************************/
-package org.eclipse.tracecompass.totalads.algorithms.slidingwindow;
+package org.eclipse.tracecompass.totalads.algorithms.sequencematching;
 /**
  * This class represents the fields of the settings collection in a NoSQL database.
  *

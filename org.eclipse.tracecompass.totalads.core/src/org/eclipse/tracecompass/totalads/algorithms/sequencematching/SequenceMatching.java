@@ -8,7 +8,7 @@
  * Contributors:
  *    Syed Shariyar Murtaza -- Initial design and implementation
  **********************************************************************************************/
-package org.eclipse.tracecompass.totalads.algorithms.slidingwindow;
+package org.eclipse.tracecompass.totalads.algorithms.sequencematching;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -27,14 +27,14 @@ import org.eclipse.tracecompass.totalads.exceptions.TotalADSGeneralException;
 import org.eclipse.tracecompass.totalads.readers.ITraceIterator;
 import org.eclipse.osgi.util.NLS;
 import org.eclipse.tracecompass.totalads.algorithms.AlgorithmFactory;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.Event;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.Messages;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.NameToIDCollection;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.NameToIDMapper;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.SettingsCollection;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.SlidingWindow;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.SlidingWindowTree;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.TraceCollection;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.Event;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.Messages;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.NameToIDMapper;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.SequenceMatching;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.SequenceMatchingTree;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.NameToIDCollection;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.SettingsCollection;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.TraceCollection;
 import org.swtchart.Chart;
 
 import com.google.gson.Gson;
@@ -42,7 +42,7 @@ import com.google.gson.JsonObject;
 
 
 /**
- * This class implements the Sliding Window algorithm for the host-based anomaly
+ * This class implements the sequence matching algorithm for the host-based anomaly
  * detection.
  *
  * @author <p>
@@ -50,7 +50,7 @@ import com.google.gson.JsonObject;
  *         </p>
  *
  */
-public class SlidingWindow implements IDetectionAlgorithm {
+public class SequenceMatching implements IDetectionAlgorithm {
 
     private Integer fMaxWin = 5;
     private Integer fMaxHamDis = 0;
@@ -64,7 +64,7 @@ public class SlidingWindow implements IDetectionAlgorithm {
     private Integer fTestAnomalies = 0;
     private Boolean fIsintialize = false;
     private Boolean fIsTestStarted = false;
-    private SlidingWindowTree fTreeTransformer;
+    private SequenceMatchingTree fTreeTransformer;
     private int fMaxWinLimit = 25;
     private NameToIDMapper fNameToID;
     private int fTestNameToIDSize;
@@ -74,10 +74,10 @@ public class SlidingWindow implements IDetectionAlgorithm {
     /**
      * Constructor
      **/
-    public SlidingWindow() {
+    public SequenceMatching() {
 
         fSysCallSequences = new HashMap<>();
-        fTreeTransformer = new SlidingWindowTree();
+        fTreeTransformer = new SequenceMatchingTree();
         fNameToID = new NameToIDMapper();
 
     }
@@ -700,7 +700,7 @@ public class SlidingWindow implements IDetectionAlgorithm {
     @Override
     public IDetectionAlgorithm createInstance() {
 
-        return new SlidingWindow();
+        return new SequenceMatching();
     }
 
     /*
@@ -733,9 +733,9 @@ public class SlidingWindow implements IDetectionAlgorithm {
      * Self registration of the model with the modelFactory
      * @throws TotalADSGeneralException Validation exception
      */
-    public static void registerModel() throws TotalADSGeneralException {
+    public static void registerAlgorithm() throws TotalADSGeneralException {
         AlgorithmFactory modelFactory = AlgorithmFactory.getInstance();
-        SlidingWindow sldWin = new SlidingWindow();
+        SequenceMatching sldWin = new SequenceMatching();
         modelFactory.registerModelWithFactory(AlgorithmTypes.ANOMALY, sldWin);
     }
 

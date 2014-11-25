@@ -8,7 +8,7 @@
  * Contributors:
  *    Syed Shariyar Murtaza -- Initial design and implementation
  **********************************************************************************************/
-package org.eclipse.tracecompass.totalads.algorithms.slidingwindow;
+package org.eclipse.tracecompass.totalads.algorithms.sequencematching;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,29 +19,29 @@ import org.eclipse.tracecompass.totalads.dbms.IDBCursor;
 import org.eclipse.tracecompass.totalads.dbms.IDBRecord;
 import org.eclipse.tracecompass.totalads.dbms.IDataAccessObject;
 import org.eclipse.tracecompass.totalads.exceptions.TotalADSDBMSException;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.Event;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.Messages;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.NameToIDMapper;
-import org.eclipse.tracecompass.totalads.algorithms.slidingwindow.TraceCollection;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.Event;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.Messages;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.NameToIDMapper;
+import org.eclipse.tracecompass.totalads.algorithms.sequencematching.TraceCollection;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 /**
- * This class implements the tree transformation methods for the sliding window
- * algorithm. it converts a trace of events into a tree of events and serializes
+ * This class implements the tree transformation methods for the sequence matching
+ * algorithm. It converts a trace of events into a tree of events and serializes
  * to database when needed.
  *
  * @author Syed Shariyar Murtaza
  *
  *
  */
-class SlidingWindowTree {
+class SequenceMatchingTree {
     /**
      * Constructor
      */
-    public SlidingWindowTree() {
+    public SequenceMatchingTree() {
 
     }
 
