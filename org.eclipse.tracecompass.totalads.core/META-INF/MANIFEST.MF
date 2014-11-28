@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Core
 Bundle-SymbolicName: org.eclipse.tracecompass.totalads.core
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 0.1.0.qualifier
 Bundle-Activator: org.eclipse.tracecompass.totalads.core.Activator
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources;bundle-version="3.8.101",
@@ -33,3 +33,4 @@ Export-Package: org.eclipse.tracecompass.totalads.algorithms,
  org.eclipse.tracecompass.totalads.exceptions,
  org.eclipse.tracecompass.totalads.readers,
  org.eclipse.tracecompass.totalads.ssh
+Bundle-Vendor: SBA Lab Concordia

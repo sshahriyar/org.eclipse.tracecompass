@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: org.eclipse.linuxtools.tmf.totalads.ui.swtbot.tests
 Bundle-SymbolicName: org.eclipse.tracecompass.totalads.ui.swtbot.tests;singleton:=true
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 0.1.0.qualifier
 Bundle-ActivationPolicy: lazy
 Bundle-Vendor: SBA Lab
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
@@ -11,7 +11,7 @@ Require-Bundle: org.eclipse.swtbot.go,
  org.eclipse.ui.views,
  org.eclipse.core.resources,
  org.eclipse.ui.ide,
- org.eclipse.tracecompass.totalads.core;bundle-version="1.0.0",
- org.eclipse.tracecompass.totalads.ui;bundle-version="1.0.0",
+ org.eclipse.tracecompass.totalads.core,
+ org.eclipse.tracecompass.totalads.ui,
  org.eclipse.swtbot.forms.finder;bundle-version="2.2.1",
  org.eclipse.tracecompass.tmf.ui.swtbot.tests

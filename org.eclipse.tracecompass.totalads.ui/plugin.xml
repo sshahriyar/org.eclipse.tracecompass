@@ -154,38 +154,6 @@
             commandId="org.eclipse.tracecompass.totalads.ui.dbconnection">
       </handler>
    </extension>
-   <extension
-         id="TotalADSv1"
-         point="org.eclipse.core.runtime.products">
-      <product
-            application="org.eclipse.e4.ui.workbench.swt.E4Application"
-            name="TotalADS">
-         <property
-               name="appName"
-               value="TotalADS">
-         </property>
-      </product>
-   </extension>
-   <extension
-         id="totaladsv1"
-         point="org.eclipse.core.runtime.products">
-      <product
-            application="org.eclipse.e4.ui.workbench.swt.E4Application"
-            name="TotalADS">
-      </product>
-   </extension>
-   <extension
-         id="product"
-         point="org.eclipse.core.runtime.products">
-      <product
-            application="org.eclipse.linuxtools.tracing.rcp.ui.application"
-            name="TotalADS">
-         <property
-               name="appName"
-               value="TotalADS">
-         </property>
-      </product>
-   </extension>
 
 </plugin>
  
