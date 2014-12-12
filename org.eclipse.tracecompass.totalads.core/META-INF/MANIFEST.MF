@@ -22,15 +22,21 @@ Bundle-ClassPath: lib/mahout-core-0.9-job.jar,
  lib/mahout-core-0.9.jar,
  lib/mahout-integration-0.9.jar,
  lib/mahout-math-0.9.jar,
- src/,
- bin/,
- .
+ .,
+ bin/
 Import-Package: org.eclipse.tracecompass.ctf.core,
  org.eclipse.tracecompass.tmf.core.parsers.custom,
  org.eclipse.tracecompass.tmf.core.trace
-Export-Package: org.eclipse.tracecompass.totalads.algorithms,
+Export-Package: org.eclipse.tracecompass.internal.totalads.algorithms.hiddenmarkovmodel;x-friends:="org.eclipse.tracecompass.totalads.core.tests,org.eclipse.tracecompass.totalads.ui",
+ org.eclipse.tracecompass.internal.totalads.algorithms.ksm;x-friends:="org.eclipse.tracecompass.totalads.core.tests,org.eclipse.tracecompass.totalads.ui",
+ org.eclipse.tracecompass.internal.totalads.algorithms.sequencematching;x-friends:="org.eclipse.tracecompass.totalads.core.tests,org.eclipse.tracecompass.totalads.ui",
+ org.eclipse.tracecompass.internal.totalads.readers.ctfreaders;x-friends:="org.eclipse.tracecompass.totalads.core.tests,org.eclipse.tracecompass.totalads.ui",
+ org.eclipse.tracecompass.internal.totalads.readers.textreaders;x-friends:="org.eclipse.tracecompass.totalads.core.tests,org.eclipse.tracecompass.totalads.ui",
+ org.eclipse.tracecompass.internal.totalads.readers.tmfreaders;x-friends:="org.eclipse.tracecompass.totalads.core.tests,org.eclipse.tracecompass.totalads.ui",
+ org.eclipse.tracecompass.internal.totalads.ssh;x-friends:="org.eclipse.tracecompass.totalads.core.tests,org.eclipse.tracecompass.totalads.ui",
+ org.eclipse.tracecompass.totalads.algorithms,
+ org.eclipse.tracecompass.totalads.core,
  org.eclipse.tracecompass.totalads.dbms,
  org.eclipse.tracecompass.totalads.exceptions,
- org.eclipse.tracecompass.totalads.readers,
- org.eclipse.tracecompass.totalads.ssh
+ org.eclipse.tracecompass.totalads.readers
 

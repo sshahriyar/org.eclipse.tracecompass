@@ -14,14 +14,14 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
+import org.eclipse.tracecompass.internal.totalads.algorithms.hiddenmarkovmodel.HiddenMarkovModel;
+import org.eclipse.tracecompass.internal.totalads.algorithms.ksm.KernelStateModeling;
+import org.eclipse.tracecompass.internal.totalads.algorithms.sequencematching.SequenceMatching;
 import org.eclipse.tracecompass.totalads.algorithms.AlgorithmFactory;
 import org.eclipse.tracecompass.totalads.algorithms.AlgorithmTypes;
 import org.eclipse.tracecompass.totalads.algorithms.IDetectionAlgorithm;
 import org.eclipse.tracecompass.totalads.algorithms.Messages;
 import org.eclipse.tracecompass.totalads.exceptions.TotalADSGeneralException;
-import org.eclipse.tracecompass.totalads.algorithms.hiddenmarkovmodel.HiddenMarkovModel;
-import org.eclipse.tracecompass.totalads.algorithms.ksm.KernelStateModeling;
-import org.eclipse.tracecompass.totalads.algorithms.sequencematching.SequenceMatching;
 
 /**
  * This is an AlgorithmFactory class based on a factory pattern. It registers

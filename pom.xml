@@ -49,6 +49,7 @@
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
 
+
 <pluginRepositories>
   <pluginRepository>
     <id>repo.eclipse.org</id>
@@ -58,7 +59,11 @@
     <id>tycho-snapshots</id>
     <url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
   </pluginRepository>
+
 </pluginRepositories>
+
+
+
 
 <profiles>
   <profile>
@@ -199,6 +204,12 @@
     <module>org.eclipse.tracecompass.rcp.ui</module>
 
     <module>org.eclipse.tracecompass.examples</module>
+
+    <module>org.eclipse.tracecompass.totalads.core</module>
+    <module>org.eclipse.tracecompass.totalads.core.tests</module>
+    <module>org.eclipse.tracecompass.totalads.ui</module>
+    <module>org.eclipse.tracecompass.totalads.ui.swtbot.tests</module>
+
   </modules>
 
     <build>

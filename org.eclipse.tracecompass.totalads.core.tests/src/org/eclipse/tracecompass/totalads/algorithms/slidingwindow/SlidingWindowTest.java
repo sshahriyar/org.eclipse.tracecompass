@@ -291,15 +291,7 @@ public class SlidingWindowTest {
 
     }
 
-    /**
-     * Tests the graphicalResults function
-     */
-    @Test
-    public void testGraphicalResults() {
-        IDetectionAlgorithm sqm = AlgorithmFactory.getInstance().getAlgorithmByAcronym("SQM");
-        assertTrue(sqm.graphicalResults(null) == null);
 
-    }
 
     /**
      * Tests the createInstance function

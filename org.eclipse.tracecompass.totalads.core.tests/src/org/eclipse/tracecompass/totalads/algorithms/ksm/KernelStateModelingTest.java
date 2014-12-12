@@ -290,15 +290,6 @@ public class KernelStateModelingTest {
 
     }
 
-    /**
-     * Tests the graphicalResults function
-     */
-    @Test
-    public void testGraphicalResults() {
-        IDetectionAlgorithm ksm = AlgorithmFactory.getInstance().getAlgorithmByAcronym("KSM");
-        assertTrue(ksm.graphicalResults(null) == null);
-
-    }
 
     /**
      * Tests the createInstance function

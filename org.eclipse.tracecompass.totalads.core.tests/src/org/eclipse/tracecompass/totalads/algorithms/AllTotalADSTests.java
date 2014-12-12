@@ -24,7 +24,7 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
         AlgorithmFactoryTest.class,
-        AlgorithmUtilityTest.class,
+       // AlgorithmUtilityTest.class,
         org.eclipse.tracecompass.totalads.algorithms.hiddenmarkovmodel.HiddenMarkovModelTest.class,
         org.eclipse.tracecompass.totalads.algorithms.ksm.KernelStateModelingTest.class,
         org.eclipse.tracecompass.totalads.algorithms.slidingwindow.SlidingWindowTest.class,

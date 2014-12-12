@@ -15,6 +15,8 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
+import org.eclipse.tracecompass.internal.totalads.readers.ctfreaders.CTFLTTngSysCallTraceReader;
+import org.eclipse.tracecompass.internal.totalads.ssh.SSHConnector;
 import org.eclipse.tracecompass.totalads.dbms.DBMSFactory;
 import org.eclipse.tracecompass.totalads.dbms.IDataAccessObject;
 import org.eclipse.tracecompass.totalads.exceptions.TotalADSDBMSException;
@@ -23,7 +25,6 @@ import org.eclipse.tracecompass.totalads.exceptions.TotalADSNetException;
 import org.eclipse.tracecompass.totalads.exceptions.TotalADSReaderException;
 import org.eclipse.tracecompass.totalads.readers.ITraceIterator;
 import org.eclipse.tracecompass.totalads.readers.ITraceTypeReader;
-import org.eclipse.tracecompass.totalads.ssh.SSHConnector;
 import org.eclipse.tracecompass.totalads.algorithms.AlgorithmFactory;
 import org.eclipse.tracecompass.totalads.algorithms.IAlgorithmOutStream;
 import org.eclipse.tracecompass.totalads.algorithms.IAlgorithmUtilityResultsListener;
@@ -32,8 +33,6 @@ import org.eclipse.tracecompass.totalads.algorithms.Messages;
 import org.eclipse.tracecompass.totalads.algorithms.Results;
 import org.eclipse.osgi.util.NLS;
 import org.eclipse.tracecompass.totalads.readers.TraceTypeFactory;
-import org.eclipse.tracecompass.totalads.readers.ctfreaders.CTFLTTngSysCallTraceReader;
-
 
 import com.google.common.base.Stopwatch;
 

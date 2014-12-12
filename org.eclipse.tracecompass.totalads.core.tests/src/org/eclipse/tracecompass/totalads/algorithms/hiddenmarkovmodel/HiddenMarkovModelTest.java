@@ -294,15 +294,6 @@ public class HiddenMarkovModelTest {
 
     }
 
-    /**
-     * Tests the graphicalResults function
-     */
-    @Test
-    public void testGraphicalResults() {
-        IDetectionAlgorithm hmm = AlgorithmFactory.getInstance().getAlgorithmByAcronym("HMM");
-        assertTrue(hmm.graphicalResults(null) == null);
-
-    }
 
     /**
      * Tests the createInstance function

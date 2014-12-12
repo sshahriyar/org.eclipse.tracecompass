@@ -48,6 +48,7 @@
 <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
 <unit id="com.jcraft.jsch" version="0.1.50.v201403120620"/>
 <unit id="org.apache.commons.math.source" version="2.1.0.v201105210652"/>
+<unit id="org.junit" version="0.0.0"/>
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/"/>
 </location>
 </locations>
