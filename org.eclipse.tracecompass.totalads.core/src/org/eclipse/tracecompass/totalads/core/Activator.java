@@ -95,7 +95,9 @@ public class Activator implements BundleActivator {
      * @throws Exception
      */
     private static String getCurrentPath() {
-        String applicationDir = Activator.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+      //  String applicationDir = Activator.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        String applicationDir= System.getProperty("user.dir"); //$NON-NLS-1$
+        System.out.println (applicationDir);
         return applicationDir + File.separator;
     }
 
